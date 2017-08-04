@@ -1,0 +1,22 @@
+{
+  "title": "Electron",
+  "cells": [
+    {
+      "type": "text",
+      "data": "<img src=\"quiver-image-url/06E5DE85384C4DFE9030DCECEC5E8849.jpg\" width=\"1193\" height=\"634\">"
+    },
+    {
+      "type": "text",
+      "data": "새 프로젝트에서 init하여 package.json 작성<br><div><code>npm init</code></div><div><br></div><div>먼저 electron을 글로벌 설치한다</div><div><code>npm install electron -g</code></div><div><br></div><div>프로젝트의 dependancy에 electron을 추가하기 위해 다음 명령어 실행</div><div><code>npm install electron —save</code><br></div><div><br></div><div>package.json의 scripts 항목을 다음과 같이 수정한다.&nbsp;</div><div><code>start : electron .</code></div><div><br></div><div>현재까지 작성한 Package.json은 다음과 같다.</div>"
+    },
+    {
+      "type": "code",
+      "language": "c_cpp",
+      "data": "{\n  \"name\": \"electron-demo\",\n  \"version\": \"1.0.0\",\n  \"description\": \"\",\n  \"main\": \"index.js\",\n  \"scripts\": {\n    \"start\": \"electron .\"\n  },\n  \"author\": \"irodog\",\n  \"license\": \"MIT\",\n  \"dependencies\": {\n    \"electron\": \"^1.6.11\"\n  }\n}"
+    },
+    {
+      "type": "text",
+      "data": "<div>메모</div><div><br></div><div><b>bootswatch</b><br></div><div><a href=\"https://bootswatch.com/\">https://bootswatch.com/</a><br></div><div><br></div><div>하나 다운로드 눌러서 다음과 같이 쓰면 된다.</div><div><code>&lt;link​&nbsp;</code>rel=\"stylesheet\" href =\"<a href=\"https://bootswatch.com/cerulean/bootstrap.min.css\">https://bootswatch.com/cerulean/bootstrap.min.css</a>”&gt;<span style=\"font-family: Menlo, Consolas, 'Ubuntu Mono', Monaco, source-code-pro, monospace; font-size: 11.699999809265137px; background-color: rgba(0, 0, 0, 0.0392157);\">&nbsp; &nbsp;</span></div>"
+    }
+  ]
+}

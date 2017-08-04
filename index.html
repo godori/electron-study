@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Hello Electron!</title>
+    <link rel="stylesheet" href ="https://bootswatch.com/cerulean/bootstrap.min.css">
+  </head>
+
+  <body>
+    <h1>Hello app</h1>
+    <div class="container">
+      <h1>sysInfoApp</h1>
+      <div id="output">
+      </div>
+    </div>
+
+  </body>
+  <script type="text/javascript">
+    console.log(process);
+    let output = `
+      <h2 class="page-header">App Version Data </h2>
+      <ul class="list-group">
+        <li class="list-group-item">Node: ${process.versions.node}</li>
+        <li class="list-group-item">Chrome: ${process.versions.chrome}</li>
+        <li class="list-group-item">Electron: ${process.versions.electron}</li>
+      </ul>
+
+      <h2 class="page-header">System specs </h2>
+      <ul class="list-group">
+        <li class="list-group-item">Architecture: ${process.arch}</li>
+        <li class="list-group-item">Identifier: ${process.env.PROCESSOR_IDENTIFIER}</li>
+        <li class="list-group-item">Printer: ${process.env.PRINTER}</li>
+      </ul>
+
+      <h2 class="page-header">Computer Info </h2>
+      <ul class="list-group">
+        <li class="list-group-item">Computer Name: ${process.env.USERDOMAIN}</li>
+        <li class="list-group-item">UserName: ${process.env.USER}</li>
+        <li class="list-group-item">SYSTEM DRIVE: ${process.env.SYSTEMDRIVE}</li>
+      </ul>
+    `;
+
+    document.getElementById('output').innerHTML = output;
+  </script>
+
+  <script type="text/javascript">
+    require('./renderer.js');
+  </script>
+</html>

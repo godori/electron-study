@@ -1,0 +1,20 @@
+{
+  "name": "electron-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron .",
+    "package" : "asar pack electronGodori-darwin-x64/electronGodori.app/Contents/Resources/app electronGodori-darwin-x64/electronGodori.app/Contents/Resources/app.asar",
+    "build": "electron-packager . electronGodori && cp img/icon.icns electronGodori-darwin-x64/electronGodori.app/Contents/Resources/electron.icns"
+  },
+  "author": "irodog",
+  "license": "MIT",
+  "dependencies": {
+    "electron": "^1.6.11"
+  },
+  "devDependencies": {
+    "asar": "^0.13.0",
+    "electron-packager": "^8.7.2"
+  }
+}
